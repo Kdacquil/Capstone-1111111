@@ -1,0 +1,108 @@
+
+<body>
+    <button class="Side" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="hau.ico" alt="Logo">
+        </div>
+        <h2>Dashboard</h2>
+        <a href="home">Home</a>
+        <a href="onboarding">Onboarding</a>
+        <a href="offboarding">Offboarding</a>
+        <a href="employeeinfo">Employee Information</a>
+        <div class="dropdown">
+            <a href="#">Dashboard</a>
+            <div class="dropdown-content">
+                <a href="onboardingana">Onboarding Analytics</a>
+                <a href="offboardingana">Offboarding Analytics</a>
+                <a href="distribution">Employee Distribution</a>
+                <a href="recommended">Recommendatory</a>
+                <a href="evaluation">Evaluation</a>
+                <a href="onboardingprogress">Onboarding Report</a>
+                <a href="offboardingprogress">Offboarding Report</a>
+                <a href="auditlogs">Audit Logs Report</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Onboarding</h1>
+            <button class="add-new-employee">Add New Employee +</button>
+        </header>
+
+        <div class="onboarding-table">
+            <table>
+                <tr>
+                    <td colspan="2" class="section-title">
+                        <input type="checkbox"> New Request
+                    </td>
+                    <td>Documents <span>📎 Attach Files</span></td>
+                </tr>
+                <tr>
+                    <td rowspan="3" class="avatar-cell">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uLl8zBoK0_iM5pNwJAC8hQ2f68YKtlgc7Q&s" alt="Avatar">
+                    </td>
+                    <td>
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter data">
+                    </td>
+                    <td>
+                        <label>Contact Number</label>
+                        <input type="text" placeholder="Enter data">
+                    </td>
+                    <td>
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter data">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Start Date</label>
+                        <input type="date">
+                    </td>
+                    <td>
+                        <label>Finish Date</label>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Time Spent</label>
+                        <input type="text" placeholder="Enter data">
+                    </td>
+                    <td>
+                        <label>Employment Type</label>
+                        <select>
+                            <option>Select</option>
+                            <option>Full-time</option>
+                            <option>Part-time</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Department</label>
+                        <select>
+                            <option>Select</option>
+                            <option>HR</option>
+                            <option>IT</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>Hiring Date</label>
+                        <input type="date">
+                    </td>
+
+                    <td>
+                        <label>Automated Notification</label>
+                        <select>
+                            <option>Select</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>

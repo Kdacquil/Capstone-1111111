@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "/src/app/webpages",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/loginandsignup",
+        "destination": "./loginandsignup.component.html" 
+      },
+      {
+        "source": "./home",
+        "destination": "./home.component.html" 
+      },
+      {
+        "source": "/onboarding",
+        "destination": "./onboarding.component.html" 
+      },
+      {
+        "source": "/src",
+        "destination": "./index.html" 
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+<section class="vh-100">
+ 
+    <div class="wrapper">
+      <header>
+          <div class="account-info" (click)="toggleAccount($event)" #accountContainer>
+              <i class="fas fa-user-cog account-icon"></i>
+              <span class="account-name">HR User</span>
+              <div class="account-popup" *ngIf="showAccount">
+                  <a (click)="openAccountSettings()">Account Settings</a>
+                  <a (click)="logout()">Logout</a>
+              </div>
+          </div>
+          <div class="header-content">
+              <img src="hau.ico" alt="HR Logo" class="logo">
+              <h1>Human Resource Management Office</h1>
+          </div>
+          <nav>
+              <ul class="nav-bar">
+                  <span class="menu">
+                      <li><a href="home">Home</a>
+                      <li><a href="distribution">Dashboard</a>
+                      <li><a href="onboarding">Onboarding</a>
+                      <li><a href="offboarding">Offboarding</a>
+                      </li>
+                  </span>
+              </ul>
+          </nav>
+   
+      </header>
+  
+    <div class="content">
+        <h1>Employee Information</h1>
+
+        <div class="search">
+            <input type="text" placeholder="Search Employees" oninput="searchEmployee(this.value)">
+        </div>
+
+        <table class="info-table">
+            <tr>
+                <td rowspan="3" style="text-align: center;">
+                    <img src="employ.png" alt="Profile Picture">
+                    <p>Cheena Maxine</p>
+                </td>
+                <td><strong>Contact Number:</strong> 12345678910</td>
+                <td><strong>Email:</strong> cheena&#64;hau.edu.ph </td>
+                <td><strong>Department:</strong> School of Computing</td>
+
+            </tr>
+
+            <tr>
+                <td><strong>Employment Type:</strong> Full-Time</td>
+                <td><strong>Status:</strong> Active</td>
+            </tr>
+            <tr>
+                <td colspan="1"><strong>Date Hired:</strong> July 20, 2024</td>
+                <td><strong>Document Submitted:</strong> Resume, Contract</td>
+            </tr>
+        </table>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="#" class="button">Edit Information</a>
+            <a href="#" class="button">View Details</a>
+        </div>
+    </div>
+
+    <script>
+        function searchEmployee(query) {
+            alert('Search feature triggered for: ' + query);
+        }
+    </script>
+  
+      <footer>
+          <p>&copy; 2024 HR Department. All Rights Reserved.</p>
+      </footer>
+  
+  </div>
+  </section>
+  

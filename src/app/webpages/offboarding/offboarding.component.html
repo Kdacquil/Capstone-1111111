@@ -1,0 +1,64 @@
+
+<body>
+    <button class="Side" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="hau.ico" alt="Logo">
+        </div>
+        <h2>Dashboard</h2>
+        <a href="home">Home</a>
+        <a href="onboarding">Onboarding</a>
+        <a href="offboarding">Offboarding</a>
+        <a href="employeeinfo">Employee Information</a>
+        <div class="dropdown">
+            <a href="#">Dashboard</a>
+            <div class="dropdown-content">
+                <a href="onboardingana">Onboarding Analytics</a>
+                <a href="offboardingana">Offboarding Analytics</a>
+                <a href="distribution">Employee Distribution</a>
+                <a href="recommended">Recommendatory</a>
+                <a href="evaluation">Evaluation</a>
+                <a href="onboardingprogress">Onboarding Report</a>
+                <a href="offboardingprogress">Offboarding Report</a>
+                <a href="auditlogs">Audit Logs Report</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Offboarding</h1>
+            <input type="text" placeholder="Employees">
+        </div>
+        <div class="employee-details">
+            <table>
+                <tr>
+                    <th>Status</th>
+                    <th>Contact Information</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://icons.veryicon.com/png/o/miscellaneous/standard/avatar-15.png" alt="Avatar" style="width:50px;height:50px;">
+                        <br>
+                        Name: *Insert Name*
+                    </td>
+                    <td>
+                        Contact Number: 12345678910<br>
+                        Email: Email&#64;gmail.com
+                    </td>
+                </tr>
+                <tr>
+                    <td>Finish Date <input type="text" placeholder="dd/mm/yy"></td>
+                    <td>Effective Offboarding Date <input type="text" placeholder="dd/mm/yy"></td>
+                </tr>
+                <tr>
+                    <td>Clearance Form <select><option>Select</option></select></td>
+                    <td>Exit Interviews <select><option>Select</option></select></td>
+                </tr>
+                <tr>
+                    <td>Certifications <select><option>Select</option></select></td>
+                    <td>Automated Notification <select><option>Select</option></select></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,223 @@
+.vh-100 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+
+  
+  }
+  .container {
+      width: 100%;
+      
+  
+  }
+  .wrapper {
+      display: flex;
+      flex-direction: column;
+  }
+  header {
+      background:  #800020;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+  
+  }
+  .main-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  header, footer {
+      width: 100%;
+      flex-shrink: 0;
+  }
+  .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+  }
+  header .logo {
+      width: 200px;
+      height: 100%;
+      margin-bottom: 0.5rem;
+  }
+  header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      
+  }
+  nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      list-style: none;
+  }
+  .nav {
+      text-decoration: none;
+      color: black;
+      padding: 10px 0;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: flex;
+      list-style: none;
+      position: relative;
+      z-index: 1000;
+      transition: top 0.3s ease-in-out;
+  }
+  nav ul {
+      list-style: none; 
+      padding: 0;
+      margin: 0;
+      display: flex; 
+      justify-content: center; 
+      gap: 1.5rem;
+  
+  }
+  nav ul li {
+      margin: 0 45px; 
+      display: inline; 
+  }
+  nav ul li a {
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+  }
+
+
+.content {
+    margin: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    flex: 1;
+    
+}
+
+.content h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.info-table td, .info-table th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.info-table td {
+    vertical-align: top;
+}
+
+.info-table th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.info-table img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.search {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.search input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: box-shadow 0.3s;
+}
+
+.search input:focus {
+    outline: none;
+    border-color: orange;
+    box-shadow: 0 0 5px orange;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px;
+    width: 200px;
+    background-color: maroon;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: black;
+}
+  
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #cca43b, #800020);
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    height: 120%; 
+    width: 100%; 
+    position: relative;
+    bottom: 5;
+    flex-shrink: 0; 
+    height: 184px; 
+  
+  }
+  .account-info {
+      font-weight: bold;
+      position: absolute;  
+      right: 20px;         
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 30px;
+  }
+  .account-info:hover {
+      color: #7c7c7c;
+  }
+  .account-icon {
+      width: 65px;
+  
+  }
+  .account-popup a {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: white;
+      border: 1px solid #dcdcdc;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      width: 200px;
+      z-index: 1000;
+      font-size: 14px;
+      color: black;
+      border-radius: 5px;
+      transition: all 0.2s ease-in-out;
+  }

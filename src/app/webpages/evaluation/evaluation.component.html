@@ -1,0 +1,51 @@
+<body>
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="hau.ico" alt="Logo">
+        </div>
+        <h2>Dashboard</h2>
+        <a href="home">Home</a>
+        <a href="onboarding">Onboarding</a>
+        <a href="offboarding">Offboarding</a>
+        <a href="employeeinfo">Employee Information</a>
+        <div class="dropdown">
+            <a href="#">Dashboard</a>
+            <div class="dropdown-content">
+                <a href="onboardingana">Onboarding Analytics</a>
+                <a href="offboardingana">Offboarding Analytics</a>
+                <a href="distribution">Employee Distribution</a>
+                <a href="recommended">Recommendatory</a>
+                <a href="evaluation">Evaluation</a>
+                <a href="onboardingprogress">Onboarding Report</a>
+                <a href="offboardingprogress">Offboarding Report</a>
+                <a href="auditlogs">Audit Logs Report</a>
+            </div>
+        </div>
+    </div>
+        <div class="content">
+            <h1>Evaluation Analytics Overview</h1>
+        
+            <div class="dashboard">
+                <div class="card">
+                    <h3>User Satisfaction Score</h3>
+                    <canvas id="userSatisfaction"></canvas>
+                </div>
+        
+                <div class="card">
+                    <h3>HR Efficiency Reports</h3>
+                    <canvas id="hrEfficiency"></canvas>
+                </div>
+        
+                <div class="card">
+                    <h3>Task Completion Rate</h3>
+                    <canvas id="taskCompletion"></canvas>
+                </div>
+        
+                <div class="card">
+                    <h3>System Reliability Data</h3>
+                    <canvas id="systemReliability"></canvas>
+                </div>
+            </div>
+        </div>
+</body>
